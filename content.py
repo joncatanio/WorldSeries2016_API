@@ -13,7 +13,7 @@ def getcontent(year, month, day):
       curDate = date(temp.year, temp.month, temp.day)
 
    try:
-      f = open('./' + curDate.isoformat() + '.txt', 'r')
+      f = open('./datastore/' + curDate.isoformat() + '.txt', 'r')
    except IOError:
       return json.dumps({'message': 'no information for given date'}), 500
 
