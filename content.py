@@ -45,6 +45,8 @@ def getgames(year, month, day):
       obj['home_loss'] = game['home_loss']
       obj['away_win'] = game['away_win']
       obj['away_loss'] = game['away_loss']
+      obj['home_pitcher'] = game['home_pitcher']
+      obj['away_pitcher'] = game['away_pitcher']
       obj['est_time'] = game['est_time']
 
       rank = 0
