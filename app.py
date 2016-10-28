@@ -1,4 +1,6 @@
 from flask import Flask
+import newrelic.agent
+newrelic.agent.initialize('newrelic.ini')
 
 from content import content_api
 
